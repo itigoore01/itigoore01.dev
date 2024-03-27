@@ -1,10 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    ":automergeAll",
-    "npm:unpublishSafe"
-  ],
+  "extends": ["config:base", ":automergeAll", "npm:unpublishSafe"],
   "platformAutomerge": true,
   "npm": {
     "postUpdateOptions": ["yarnDedupeHighest"]
