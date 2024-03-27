@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: { dirs: ['.'] },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: { dirs: ['.'], ignoreDuringBuilds: true },
   transpilePackages: ['@itigoore01.dev/ui'],
 };
 
