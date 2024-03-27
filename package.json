@@ -1,0 +1,32 @@
+{
+  "name": "itigoore01.dev",
+  "type": "module",
+  "packageManager": "yarn@4.1.1",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "lint-root": "eslint --report-unused-disable-directives --max-warnings 0 .",
+    "type-check": "turbo type-check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "postinstall": "husky"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@itigoore01.dev/config-eslint": "workspace:^",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "turbo": "^1.13.0",
+    "typescript": "^5.4.3"
+  }
+}

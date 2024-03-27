@@ -1,0 +1,5 @@
+{
+  "extends": "@itigoore01.dev/config-typescript/react-library.json",
+  "include": ["."],
+  "exclude": ["node_modules"]
+}
