@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Corepack enable
+        run: corepack enable
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: yarn
+      - name: Install node_modules
+        run: yarn install --immutable
+      - name: Format check
+        run: yarn format:check
+      - name: Lint
+        run: yarn lint-root && yarn lint
+      - name: Type check
+        run: yarn type-check
+      - name: Build
+        run: yarn build
