@@ -16,6 +16,14 @@ module.exports = {
     project: true,
     sourceType: 'module',
   },
+  rules: {
+    '@typescript-eslint/restrict-template-expressions': [
+      'error',
+      {
+        allowNumber: true,
+      },
+    ],
+  },
   overrides: [
     {
       files: ['*.js', '*.mjs', '*.cjs'],
