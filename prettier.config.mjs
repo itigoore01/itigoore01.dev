@@ -1,7 +1,10 @@
 /** @type {import('prettier').Config} */
-const lintStagedConfig = {
-  plugins: [import.meta.resolve('prettier-plugin-organize-imports')],
+const prettierConfig = {
+  plugins:
+    typeof import.meta.resolve === 'function'
+      ? [import.meta.resolve('prettier-plugin-organize-imports')]
+      : [],
   singleQuote: true,
 };
 
-export default lintStagedConfig;
+export default prettierConfig;
