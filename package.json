@@ -1,6 +1,5 @@
 {
   "name": "itigoore01.dev",
-  "type": "module",
   "packageManager": "yarn@4.1.1",
   "engines": {
     "node": ">=18"
