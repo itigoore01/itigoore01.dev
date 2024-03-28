@@ -2,7 +2,7 @@
 const lintStagedConfig = {
   '*': ['prettier --write --ignore-unknown'],
   '*.{js,cjs,mjs,ts,tsx}': [
-    'eslint --report-unused-disable-directives --max-warnings 0 --fix .',
+    'eslint --report-unused-disable-directives --max-warnings 0 --fix',
   ],
 };
 
