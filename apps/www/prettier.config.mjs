@@ -1,9 +1,12 @@
 /** @type {import('prettier').Config} */
 const prettierConfig = {
-  plugins: [
-    import.meta.resolve('prettier-plugin-organize-imports'),
-    import.meta.resolve('prettier-plugin-tailwindcss'),
-  ],
+  plugins:
+    typeof import.meta.resolve === 'function'
+      ? [
+          import.meta.resolve('prettier-plugin-organize-imports'),
+          import.meta.resolve('prettier-plugin-tailwindcss'),
+        ]
+      : [],
   singleQuote: true,
 };
 
