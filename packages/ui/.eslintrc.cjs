@@ -1,7 +1,11 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
-  extends: [require.resolve('@itigoore01.dev/config-eslint/react-internal')],
+  ignorePatterns: ['!.storybook'],
+  extends: [
+    require.resolve('@itigoore01.dev/config-eslint/react-internal'),
+    'plugin:storybook/recommended',
+  ],
   overrides: [
     {
       files: ['*.cjs'],
