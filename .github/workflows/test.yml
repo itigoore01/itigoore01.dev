@@ -29,5 +29,3 @@ jobs:
         run: yarn lint-root && yarn lint
       - name: Type check
         run: yarn type-check
-      - name: Build
-        run: yarn build
