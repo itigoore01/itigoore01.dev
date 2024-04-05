@@ -1,8 +1,12 @@
+import containerQueriesPlugin from '@tailwindcss/container-queries';
 import type { Config } from 'tailwindcss';
 import animatePlugin from 'tailwindcss-animate';
 
 export const preset = {
   darkMode: ['class'],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     container: {
       center: true,
@@ -71,5 +75,5 @@ export const preset = {
       },
     },
   },
-  plugins: [animatePlugin],
+  plugins: [animatePlugin, containerQueriesPlugin],
 } satisfies Partial<Config>;

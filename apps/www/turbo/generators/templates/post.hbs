@@ -1,0 +1,15 @@
+import type { PostMeta } from '../post-meta';
+
+export const meta = {
+  title: '{{ slug }}',
+  description: 'describe of {{ slug }}',
+  publishDate: new Date('{{ date }}'),
+} satisfies PostMeta;
+
+export default function {{ pascalCase slug }}Post() {
+  return (
+    <div>
+      <h1>{{ pascalCase slug }} Post</h1>
+    </div>
+  );
+}
