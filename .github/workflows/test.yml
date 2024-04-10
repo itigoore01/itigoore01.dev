@@ -12,8 +12,13 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - name: Corepack enable
         run: corepack enable
       - name: Use Node.js
@@ -25,7 +30,5 @@ jobs:
         run: yarn install --immutable
       - name: Format check
         run: yarn format:check
-      - name: Lint
-        run: yarn lint-root && yarn lint
-      - name: Type check
-        run: yarn type-check
+      - name: Type check and Lint packages
+        run: yarn turbo run type-check lint --filter='./packages/*'

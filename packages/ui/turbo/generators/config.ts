@@ -18,7 +18,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI) {
       },
       {
         type: 'add',
-        path: 'src/{{ kebabCase name }}/index.tsx',
+        path: 'src/{{ kebabCase name }}/index.ts',
         templateFile: 'templates/index.hbs',
       },
       {

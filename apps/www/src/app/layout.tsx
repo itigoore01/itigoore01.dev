@@ -3,6 +3,8 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Noto_Sans_JP as FontSans } from 'next/font/google';
+import { Footer } from './components/footer';
+import { Header } from './components/header';
 import './globals.css';
 
 const inter = FontSans({
@@ -28,7 +30,9 @@ export default function RootLayout({
           inter.variable,
         )}
       >
+        <Header />
         {children}
+        <Footer />
 
         <SpeedInsights />
         <Analytics />
