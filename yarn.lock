@@ -1806,7 +1806,7 @@ __metadata:
     clsx: "npm:^2.1.0"
     eslint: "npm:^8.57.0"
     eslint-plugin-storybook: "npm:^0.8.0"
-    lucide-react: "npm:^0.366.0"
+    lucide-react: "npm:^0.367.0"
     postcss: "npm:^8.4.38"
     prettier: "npm:^3.2.5"
     prettier-plugin-organize-imports: "npm:^3.2.4"
@@ -8595,12 +8595,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.366.0":
-  version: 0.366.0
-  resolution: "lucide-react@npm:0.366.0"
+"lucide-react@npm:^0.367.0":
+  version: 0.367.0
+  resolution: "lucide-react@npm:0.367.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/dcb46c9bf80921c3886f0a42289ed9adf5722d3acf60ffe7b62cabb855cf9abb035a4e532e94895216b70da1a22074973ea02337afe5cf21bf31133032c3a8a1
+  checksum: 10c0/eb45ce5770026243f0888c911865297a8237bae78e17f81dc4f8a056d0e1302a766ed0c6f74323206877743a3be51065a970b4538fa8b43c008a3bd34dacb2bc
   languageName: node
   linkType: hard
 
