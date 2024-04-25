@@ -6,6 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
     "lint": "next lint --report-unused-disable-directives warn --max-warnings 0",
     "type-check": "tsc",
     "generate:post": "turbo gen post"
@@ -25,18 +28,25 @@
     "@itigoore01.dev/config-typescript": "workspace:^",
     "@itigoore01.dev/ui": "workspace:^",
     "@next/bundle-analyzer": "^14.1.4",
+    "@testing-library/react": "^15.0.1",
     "@turbo/gen": "^1.13.2",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.72",
     "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^1.5.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
+    "happy-dom": "^14.7.1",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "schema-dts": "^1.1.2",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "vite": "^5.2.8",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.5.0"
   }
 }

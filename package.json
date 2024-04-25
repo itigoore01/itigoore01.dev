@@ -9,6 +9,9 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "test:ui": "turbo test:ui",
     "lint": "turbo lint",
     "lint-root": "eslint --report-unused-disable-directives --max-warnings 0 .",
     "type-check": "turbo type-check",
