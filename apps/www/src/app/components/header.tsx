@@ -1,5 +1,5 @@
 import { cn } from '@itigoore01.dev/ui/utils';
-import { HeaderLink } from './header-link';
+import { LinkWithActive } from './link-with-active-state';
 
 export function Header() {
   return (
@@ -23,9 +23,9 @@ export function Header() {
 function HeaderNavItem<RouteType>({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<typeof HeaderLink<RouteType>>) {
+}: React.ComponentPropsWithoutRef<typeof LinkWithActive<RouteType>>) {
   return (
-    <HeaderLink
+    <LinkWithActive
       className={cn('data-[active]:font-medium', className)}
       {...props}
     />

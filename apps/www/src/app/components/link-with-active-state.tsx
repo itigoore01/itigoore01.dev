@@ -21,11 +21,15 @@ const ACTIVE_STRATEGIES = {
   startsWith: (href, pathname) => pathname.startsWith(href),
 } satisfies Record<ActiveStrategy, (href: string, pathname: string) => boolean>;
 
-export function HeaderLink<RouteType>({
-  href,
-  activeStrategy = 'equals',
-  ...props
-}: Props<RouteType>) {
+export function useLinkActiveState<RouteType>(
+  href: React.ComponentProps<typeof Link<RouteType>>['href'],
+  activeStrategy:
+    | ActiveStrategy
+    | {
+        strategy: ActiveStrategy;
+        value: string;
+      },
+) {
   const pathname = usePathname();
 
   const strategyFn =
@@ -35,12 +39,20 @@ export function HeaderLink<RouteType>({
         : activeStrategy
     ];
 
-  const active = strategyFn(
+  return strategyFn(
     typeof activeStrategy === 'object'
       ? activeStrategy.value
       : normalizeHref(href),
     pathname,
   );
+}
+
+export function LinkWithActive<RouteType>({
+  href,
+  activeStrategy = 'equals',
+  ...props
+}: Props<RouteType>) {
+  const active = useLinkActiveState(href, activeStrategy);
 
   return <Link href={href} data-active={active || undefined} {...props} />;
 }

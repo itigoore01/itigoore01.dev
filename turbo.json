@@ -7,6 +7,15 @@
       "outputs": [".next/**", "!.next/cache/**"],
       "env": ["ANALYZE"]
     },
+    "test": {},
+    "test:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:ui": {
+      "cache": false,
+      "persistent": true
+    },
     "lint": {},
     "type-check": {},
     "dev": {
