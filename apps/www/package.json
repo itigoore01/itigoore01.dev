@@ -18,8 +18,8 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "next": "14.2.3",
-    "react": "18.3.0",
-    "react-dom": "18.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "rss-parser": "^3.13.0",
     "valibot": "^0.30.0"
   },
