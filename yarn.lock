@@ -1796,7 +1796,7 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
-    eslint-config-turbo: "npm:1.13.3"
+    eslint-config-turbo: "npm:1.13.4"
     eslint-import-resolver-node: "npm:0.3.9"
     eslint-import-resolver-typescript: "npm:3.6.1"
     eslint-plugin-import: "npm:2.29.1"
@@ -3563,10 +3563,10 @@ __metadata:
   linkType: hard
 
 "@turbo/gen@npm:^1.13.0, @turbo/gen@npm:^1.13.2":
-  version: 1.13.3
-  resolution: "@turbo/gen@npm:1.13.3"
+  version: 1.13.4
+  resolution: "@turbo/gen@npm:1.13.4"
   dependencies:
-    "@turbo/workspaces": "npm:1.13.3"
+    "@turbo/workspaces": "npm:1.13.4"
     chalk: "npm:2.4.2"
     commander: "npm:^10.0.0"
     fs-extra: "npm:^10.1.0"
@@ -3579,13 +3579,13 @@ __metadata:
     validate-npm-package-name: "npm:^5.0.0"
   bin:
     gen: dist/cli.js
-  checksum: 10c0/4766159d83fe37782c50f73ab7547a5871343c326f5bda80e50e293e990691bed6dd2dda8ea23e045863e755ea08c45f0c84ceb7cec48d32d9b4779a0a8368db
+  checksum: 10c0/6bc64be5454a0a82188ee50c06732f7e84dbd169a189f1b268a67186a1ae40d465ef7ca19e87d6407b5302de1554a9989c8429ceed0a7c53c749982df41236f3
   languageName: node
   linkType: hard
 
-"@turbo/workspaces@npm:1.13.3":
-  version: 1.13.3
-  resolution: "@turbo/workspaces@npm:1.13.3"
+"@turbo/workspaces@npm:1.13.4":
+  version: 1.13.4
+  resolution: "@turbo/workspaces@npm:1.13.4"
   dependencies:
     chalk: "npm:2.4.2"
     commander: "npm:^10.0.0"
@@ -3601,7 +3601,7 @@ __metadata:
     update-check: "npm:^1.5.4"
   bin:
     workspaces: dist/cli.js
-  checksum: 10c0/a8c5d95885ffea63ca13ec7148c2e257e67f0b130dc501c5914a14e794bd62dc181fdd85efe45af9f26c61712bb77f146c1773ee9c8469192c769eecd046c4bd
+  checksum: 10c0/1a7a0f82826ec8b738ac6a0adaee989367188bd315629e47e040597e0aae88da5b7fe57f20f9765803e70e02e4470c48e52b11a6db21ed2d09b356b346c60d92
   languageName: node
   linkType: hard
 
@@ -6556,14 +6556,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-turbo@npm:1.13.3":
-  version: 1.13.3
-  resolution: "eslint-config-turbo@npm:1.13.3"
+"eslint-config-turbo@npm:1.13.4":
+  version: 1.13.4
+  resolution: "eslint-config-turbo@npm:1.13.4"
   dependencies:
-    eslint-plugin-turbo: "npm:1.13.3"
+    eslint-plugin-turbo: "npm:1.13.4"
   peerDependencies:
     eslint: ">6.6.0"
-  checksum: 10c0/1ef36a8728bf2e660dab6ed807d186c11d0d6b670e4c70caf4b15ef9f6a0558a54ad82528d16feffcd6b125f16977ba1fb6c6c033b0a8b2f0a2bf8a4e9b9e4b0
+  checksum: 10c0/c77c2144d1557febb7f38556a81d424c55f138b2f335f4a8e582fcd71a6c2c8a72852b02b4ca48e5ff297576900cd228cb2fd17a1100719bfcbfe4dd94c6f790
   languageName: node
   linkType: hard
 
@@ -6721,14 +6721,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:1.13.3":
-  version: 1.13.3
-  resolution: "eslint-plugin-turbo@npm:1.13.3"
+"eslint-plugin-turbo@npm:1.13.4":
+  version: 1.13.4
+  resolution: "eslint-plugin-turbo@npm:1.13.4"
   dependencies:
     dotenv: "npm:16.0.3"
   peerDependencies:
     eslint: ">6.6.0"
-  checksum: 10c0/8cb4e7a7fcc41713578f3d18bff5173167c866b38e5bf9336e63ac56a777c9dc02f93835d1768dee5a9d799804ea8da1527878e9222b4e39b1409a185179ce68
+  checksum: 10c0/be75d1d77c6c0cc15ea6834cf8d88a45799a4034a3e7e16085af68b1417b3df76781824aaf58bd7dc9ec1420df819613041eeba97570ab8e095d8ebb65f65953
   languageName: node
   linkType: hard
 
@@ -12404,58 +12404,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.13.3":
-  version: 1.13.3
-  resolution: "turbo-darwin-64@npm:1.13.3"
+"turbo-darwin-64@npm:1.13.4":
+  version: 1.13.4
+  resolution: "turbo-darwin-64@npm:1.13.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.13.3":
-  version: 1.13.3
-  resolution: "turbo-darwin-arm64@npm:1.13.3"
+"turbo-darwin-arm64@npm:1.13.4":
+  version: 1.13.4
+  resolution: "turbo-darwin-arm64@npm:1.13.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.13.3":
-  version: 1.13.3
-  resolution: "turbo-linux-64@npm:1.13.3"
+"turbo-linux-64@npm:1.13.4":
+  version: 1.13.4
+  resolution: "turbo-linux-64@npm:1.13.4"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.13.3":
-  version: 1.13.3
-  resolution: "turbo-linux-arm64@npm:1.13.3"
+"turbo-linux-arm64@npm:1.13.4":
+  version: 1.13.4
+  resolution: "turbo-linux-arm64@npm:1.13.4"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.13.3":
-  version: 1.13.3
-  resolution: "turbo-windows-64@npm:1.13.3"
+"turbo-windows-64@npm:1.13.4":
+  version: 1.13.4
+  resolution: "turbo-windows-64@npm:1.13.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.13.3":
-  version: 1.13.3
-  resolution: "turbo-windows-arm64@npm:1.13.3"
+"turbo-windows-arm64@npm:1.13.4":
+  version: 1.13.4
+  resolution: "turbo-windows-arm64@npm:1.13.4"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
 "turbo@npm:^1.13.0":
-  version: 1.13.3
-  resolution: "turbo@npm:1.13.3"
+  version: 1.13.4
+  resolution: "turbo@npm:1.13.4"
   dependencies:
-    turbo-darwin-64: "npm:1.13.3"
-    turbo-darwin-arm64: "npm:1.13.3"
-    turbo-linux-64: "npm:1.13.3"
-    turbo-linux-arm64: "npm:1.13.3"
-    turbo-windows-64: "npm:1.13.3"
-    turbo-windows-arm64: "npm:1.13.3"
+    turbo-darwin-64: "npm:1.13.4"
+    turbo-darwin-arm64: "npm:1.13.4"
+    turbo-linux-64: "npm:1.13.4"
+    turbo-linux-arm64: "npm:1.13.4"
+    turbo-windows-64: "npm:1.13.4"
+    turbo-windows-arm64: "npm:1.13.4"
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -12471,7 +12471,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 10c0/0382cc88f65a6690e97d30a6ad5d9b9ede7705f5f57edea27629408b166eff4a5938824746ce2cbcd50d2b64ebdbd359160e2cbe009f0bfd6f144997f9f6705b
+  checksum: 10c0/be23d926caa905f03313537128d623e8e4561bee6463a77f7e68d840f5a9e4f965d16d9ecb9e27ebcb13bfa1649a110517734efe56e96e47195cabb2dfc965c3
   languageName: node
   linkType: hard
 
