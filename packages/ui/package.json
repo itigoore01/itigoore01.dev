@@ -45,7 +45,7 @@
     "@storybook/react": "^8.0.4",
     "@storybook/react-vite": "^8.0.4",
     "@storybook/test": "^8.0.4",
-    "@turbo/gen": "^1.13.0",
+    "@turbo/gen": "^2.0.0",
     "@types/react": "^18.2.72",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
